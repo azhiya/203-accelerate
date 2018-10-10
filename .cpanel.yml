@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/azhiya/staging.azhiya.com
- - /bin/cp accelerate $DEPLOYPATH
+ - export DEPLOYPATH=/home/azhiya/staging.azhiya.com/
+ - /bin/cp 203-accelerate $DEPLOYPATH
