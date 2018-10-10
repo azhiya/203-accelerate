@@ -1,6 +1,6 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/azhiya/staging.azhiya.com/
+ - export DEPLOYPATH=/home/azhiya/repositories/accelerate
  - /bin/cp index.html $DEPLOYPATH
  - /bin/cp style.css $DEPLOYPATH
