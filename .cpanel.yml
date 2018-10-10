@@ -2,4 +2,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/azhiya/staging.azhiya.com/
- - /bin/cp 203-accelerate $DEPLOYPATH
+ - /bin/rsync -avz /home/azhiya/repositories/accelerate/ $DEPLOYPATH
