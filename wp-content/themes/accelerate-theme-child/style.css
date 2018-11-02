@@ -20,6 +20,28 @@ Text Domain:  accelerate-theme-child
 	background: #45ac9d;
 }
 
+.featured-work-post h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.homepage-featured-work{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.individual-featured-work{
+    margin: 20px;
+}
+
+.individual-featured-work h3{
+    margin-top: 1em;
+    /*font-size: 1em;*/
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 .blog-post{
     width: 50%;
     float: left;
@@ -52,4 +74,125 @@ Text Domain:  accelerate-theme-child
   background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav ul li{
+    float:left;
+    margin: 0 10px;
+}
+
+aside.case-study-sidebar h2{
+    font-weight: 500;
+}
+
+aside.case-study-sidebar h5, h6{
+    font-size: .75em;
+    font-weight: 400;
+    margin: 0.5em 0 0;
+}
+
+aside.case-study-sidebar h5{
+    text-transform: capitalize;
+    color: darkgrey;
+}
+
 /* End BODY STYLES */
+
+
+/* CASE STUDIES STYLES */
+
+article.case-study{
+    margin-top: 40px;
+}
+
+aside.case-study-sidebar{
+    float:left;
+    width:300px;
+    margin:0 40px 0 0;
+}
+ 
+div.case-study-images{
+    float:left;
+    width:606px;
+}
+
+div.case-study-images img{
+    margin-bottom:50px;
+    border:1px solid #dddddd;
+    width: 100%;
+    height:auto;
+}
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+}
+
+/* End BODY STYLES */
+
+
+/* Start FOOTER STYLES */
+nav.social-media-navigation ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+nav.social-media-navigation ul li{
+    margin-right:0.3em;
+}
+
+.icon{
+    background-color:#000000;
+    width:2.5em;
+    height:2.5em;
+    border-radius:50%;
+    text-align:center;
+    line-height:2.5em;
+    vertical-align:middle;
+    color:#ffffff;
+}
+
+.icon::before{
+    display: inline-flex;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialised;
+}
+
+.twitter::before{
+    font-family:"Font Awesome 5 Brands";
+    font-weight: 400;
+    content:"\f099";
+    font-size:1.25em;
+ 
+}
+
+.facebook::before{
+    font-family:"Font Awesome 5 Brands";
+    font-weight: 400;
+    content:"\f39e";
+    font-size:1.25em;
+} 
+
+.linkedin::before{
+    font-family:"Font Awesome 5 Brands";
+    font-weight: 400;
+    content:"\f0e1";
+    font-size:1.25em;
+} 
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+/* End FOOTER STYLES */
