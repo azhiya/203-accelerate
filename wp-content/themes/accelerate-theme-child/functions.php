@@ -36,7 +36,7 @@ add_action( 'init', 'create_custom_post_types' );
 
 //Add Font Awesome Icons
 function enqueue_load_fa() {
-    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.5.0/css.all.css');
+    wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 
