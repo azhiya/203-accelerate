@@ -22,7 +22,7 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
-	<section class="featured-wordk">
+	<section class="featured-work">
 		<div class="site-content">
 			<div class="featured-work-post">
 				<h4>Featured Work</h4>
