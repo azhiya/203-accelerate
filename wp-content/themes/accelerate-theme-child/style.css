@@ -126,7 +126,27 @@ div.case-study-images img {
 	height: auto;
 }
 
-/* End BODY STYLES */
+/* End CASE STUDIES STYLES */
+
+.nf-form-fields-required {
+  display: none; /* hides the all fields marked with an * are required message */
+}
+
+.ninja-forms-req-symbol {
+  display: none; /* hides the asterisk */
+}
+
+#nf-field-4{
+/* Send the submit button to the right */
+    float:right;
+    background: #45ac9d; /* Style the Submit button*/
+}
+
+
+/* CONTACT US STYLES */
+
+
+/* End CONTACT US STYLES */
 
 
 /* Start FOOTER STYLES */
