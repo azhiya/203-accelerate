@@ -27,21 +27,39 @@ get_header(); ?>
 		<div class="site-content">
 			<h4>Our Services</h4>
 			<p>We take pride in our clients and the content we create for them.<br>Here's a brief overview of our offered services.</p>	
-				
-			<ul class="our-services">
+			<div class="services-wrapper">
+				<ul>
 				<?php query_posts('post_type=services'); ?>
 					<?php while (have_posts() ) : the_post(); 
 						$service_icon = get_field("service_icon");
-					?>
-						<li>
-							<?php echo wp_get_attachment_image($service_icon); ?>
-							<h3><?php the_title(); ?></h3>
+						$size ="small";
+					?>				
+					<li class="service-line">
+						<div>
+							<figure><?php echo wp_get_attachment_image($service_icon, $size); ?>
+							</figure>
+						</div>
+						<div>
+							<h2><?php the_title(); ?></h2>
 							<p><?php the_content(); ?></p>
-						</li>
+						</div>
+					</li>
 					<?php endwhile; ?>
 				<?php wp_reset_query(); ?>
-			</ul>
+				</ul>
+			</div>
+
+			<div class="about-contact">
+					<div>
+						<h2>Interested in working with us?</h2>
+					</div>
+					<div>
+						<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
+					</div>
+			</div>		
+
 		</div>
+
 	</section>
 
 <?php get_footer(); ?>

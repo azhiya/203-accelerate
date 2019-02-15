@@ -145,15 +145,27 @@ div.case-study-images img {
     text-align: center;
 }
 
-.our-services{
-    display: flex;
-    flex-flow: row wrap;
-    width:100%;
+.service-line{
+    list-style:none;
+    display:grid;
+    grid-template-columns:20% 75%;
+    grid-column-gap:50px;
+    grid-row-gap:50px;
+    align-items: center;
 }
 
-.our-services ul{
-    list-style-type: circle;
-    list-style-image:url('/path/to/custom-bullet.png');
+.service-line p{
+    text-align:left;
+    font-weight: 100;
+}
+
+.about-contact{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-auto-rows: 100%;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
 }
 
 /* END ABOUT US STYLES */
