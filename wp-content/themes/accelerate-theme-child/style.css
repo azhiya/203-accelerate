@@ -129,6 +129,36 @@ div.case-study-images img {
 /* End CASE STUDIES STYLES */
 
 
+/* ABOUT US STYLES */
+
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+
+.featured-services h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.featured-services p{
+    text-align: center;
+}
+
+.our-services{
+    display: flex;
+    flex-flow: row wrap;
+    width:100%;
+}
+
+.our-services ul{
+    list-style-type: circle;
+    list-style-image:url('/path/to/custom-bullet.png');
+}
+
+/* END ABOUT US STYLES */
+
+
 /* CONTACT US STYLES */
 
 .nf-form-fields-required {

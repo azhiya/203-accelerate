@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="about-page hero-content">
+	<div id="primary" class="home-page hero-content">
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
@@ -23,11 +23,24 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-	<section class="services">
+	<section class="featured-services">
 		<div class="site-content">
-			<div class="services-post">
-				<h4>Our Services</h4>
-			</div>
+			<h4>Our Services</h4>
+			<p>We take pride in our clients and the content we create for them.<br>Here's a brief overview of our offered services.</p>	
+				
+			<ul class="our-services">
+				<?php query_posts('post_type=services'); ?>
+					<?php while (have_posts() ) : the_post(); 
+						$service_icon = get_field("service_icon");
+					?>
+						<li>
+							<?php echo wp_get_attachment_image($service_icon); ?>
+							<h3><?php the_title(); ?></h3>
+							<p><?php the_content(); ?></p>
+						</li>
+					<?php endwhile; ?>
+				<?php wp_reset_query(); ?>
+			</ul>
 		</div>
 	</section>
 
