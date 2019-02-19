@@ -135,6 +135,9 @@ div.case-study-images img {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
+.services-wrapper h2{
+    font-weight: 500;
+}
 
 .featured-services h4{
     text-align: center;
@@ -149,9 +152,9 @@ div.case-study-images img {
     list-style:none;
     display:grid;
     grid-template-columns:20% 75%;
-    grid-column-gap:50px;
-    grid-row-gap:50px;
+    grid-column-gap:3em;
     align-items: center;
+
 }
 
 .service-line p{
@@ -159,13 +162,35 @@ div.case-study-images img {
     font-weight: 100;
 }
 
+.services-wrapper ul {
+    margin:0;
+}
+
+.services-wrapper ul li:nth-child(even){
+    direction:rtl;
+}
+
+.services-wrapper{
+    padding: 4em 1em;
+}
+
+.service-detail{
+    align-content:center;
+}
 .about-contact{
     display:grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     grid-auto-rows: 100%;
     align-items: center;
     text-align: center;
     font-weight: 500;
+    padding-top:2em;
+    border-top:1px solid #bfbfbf;
+}
+
+.about-contact-h2{
+    text-align: center;
+    padding-bottom:1.5em;
 }
 
 /* END ABOUT US STYLES */
