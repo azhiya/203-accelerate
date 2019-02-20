@@ -13,7 +13,8 @@
 // Enqueue scripts and styles
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+    wp_enqueue_style( 'accelerate-child-google-fonts','//fonts.googleapis.com/css?family=Londrina+Solid:400,900');
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
@@ -51,6 +52,7 @@ function enqueue_load_fa() {
     wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+
 
 
 

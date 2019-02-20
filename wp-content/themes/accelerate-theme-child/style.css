@@ -215,6 +215,26 @@ div.case-study-images img {
 /* End CONTACT US STYLES */
 
 
+
+/* Start 404 STYLES */
+
+.funny-box p{
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.serious-box h1{
+    font-family: 'Londrina Solid', cursive;
+}
+
+.serious-box h1, a{
+	font-weight: 900;
+	color: #45ac9d;
+}
+
+/* End 404 STYLES */
+
+
 /* Start FOOTER STYLES */
 nav.social-media-navigation ul{
     list-style-type: none;
