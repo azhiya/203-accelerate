@@ -35,7 +35,7 @@ Text Domain:  accelerate-theme-child
     margin: 20px;
 }
 
-.individual-featured-work h3{
+.homepage-featured-work h3{
     margin-top: 1em;
     /*font-size: 1em;*/
     text-transform: capitalize;
@@ -43,7 +43,7 @@ Text Domain:  accelerate-theme-child
 }
 
 .blog-post{
-    width: 50%;
+    width: 45%;
     float: left;
     margin-bottom: 2em;
 }
@@ -65,7 +65,58 @@ Text Domain:  accelerate-theme-child
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.social-feed{
+    width: 45%;
+    float: right;
+    margin-bottom: 2em;
+}
+
+.social-feed h3{
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;    
+}
+
+#ctf .ctf-author-name{
+    display:none; /*removes the author-name*/
+}
+
+#ctf .ctf-screename-sep{
+    display: none; /*removes the separator*/
+}
+
+#ctf.ctf-styles .ctf-author-screenname{
+    /*align the screen name to the blog-post title*/
+    margin: 1em 0 .5em;
+    font: 700 1.5em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    line-height: 1.75;
+}
+
+#ctf.ctf-styles .ctf-tweet-actions{
+    /*style the Follow Us to look like Read More*/
+    font-family: 'Montserrat';
+	font-weight: 700;
+    text-transform: uppercase;
+    padding-top:0.5em;
+}
+
+#ctf .ctf-tweet-actions a{
+    padding:0;
+    float:none;
+}
+
+#ctf.ctf-styles .ctf-twitterlink{
+    font-size:1em;
+}
+
+a.ctf-twitterlink{
+    color:none;
+}
+
 /* End HOMEPAGE STYLES */
+
 
 
 /* BODY STYLES OVERRIDE*/
@@ -93,7 +144,6 @@ aside.case-study-sidebar h5{
     text-transform: capitalize;
     color: darkgrey;
 }
-
 /* End BODY STYLES */
 
 
@@ -218,16 +268,16 @@ div.case-study-images img {
 
 /* Start 404 STYLES */
 
-.funny-box p{
+#funny404-box p{
     font-size: 0.75em;
     text-align: right;
 }
 
-.serious-box h1{
+#serious404-box h1{
     font-family: 'Londrina Solid', cursive;
 }
 
-.serious-box h1, a{
+#serious-box404 h1, a{
 	font-weight: 900;
 	color: #45ac9d;
 }
