@@ -65,6 +65,7 @@ get_header(); ?>
 						<?php dynamic_sidebar( 'sidebar-2' ); ?>
 					</div>
 				<?php endif; ?>
+				<a class="read-more-link" href="https://twitter.com/AzhiyaLtd" target="_blank"><span>Follow Us ></span>
 			</div>
 		</div>
 	</section>

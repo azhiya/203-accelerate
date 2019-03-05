@@ -79,6 +79,12 @@ Text Domain:  accelerate-theme-child
     margin: 2em 0 .5em;    
 }
 
+#ctf #ctf-more {
+    background:none;
+    background: none;
+    text-align: left;
+}
+
 #ctf .ctf-author-name{
     display:none; /*removes the author-name*/
 }
@@ -115,6 +121,7 @@ a.ctf-twitterlink{
     color:none;
 }
 
+
 /* End HOMEPAGE STYLES */
 
 
@@ -144,6 +151,15 @@ aside.case-study-sidebar h5{
     text-transform: capitalize;
     color: darkgrey;
 }
+
+.mc4wp-form p{
+    font-size: 0.9em;
+}
+
+.mc4wp-form input[type="submit"]{ 
+    background: #45ac9d;
+}
+
 /* End BODY STYLES */
 
 
