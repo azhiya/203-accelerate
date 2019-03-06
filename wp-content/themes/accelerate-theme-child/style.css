@@ -293,7 +293,8 @@ div.case-study-images img {
     font-family: 'Londrina Solid', cursive;
 }
 
-#serious-box404 h1, a{
+#serious404-box h1, 
+#serious404-box a{
 	font-weight: 900;
 	color: #45ac9d;
 }
