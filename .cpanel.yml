@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/azhiya/accelerate.azhiya.com/
+ - export DEPLOYPATH=/home/azhiya/acceleratestaging.azhiya.com/
  - /bin/rsync -avz /home/azhiya/repositories/accelerate/ $DEPLOYPATH
